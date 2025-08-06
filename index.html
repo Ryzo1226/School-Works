@@ -7,11 +7,11 @@
 <body>
   <h1>Select Your Project</h1>
 
-  <label for="projectSelect">Choose a project:</label>
+  <label for="projectSelect">Choose a PT:</label>
   <select id="projectSelect" name="projectSelect" onchange="openProject()">
     <option value="">--Please choose an option--</option>
-    <option value="project1.html">Project 1</option>
-    <option value="project2.html">Project 2</option>
+    <option value="PT1.html">PT1</option>
+    <option value="PT2.html">PT2</option>
   </select>
 
   <script>
@@ -20,7 +20,7 @@
       const project = select.value;
       if (project) {
         // Navigate to the selected HTML file in the same tab
-        window.location.href = project;
+        window.location.href = PT;
       }
     }
   </script>
