@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Select Project</title>
+</head>
+<body>
+  <h1>Select Your Project</h1>
+
+  <label for="projectSelect">Choose a project:</label>
+  <select id="projectSelect" name="projectSelect" onchange="openProject()">
+    <option value="">--Please choose an option--</option>
+    <option value="project1.html">Project 1</option>
+    <option value="project2.html">Project 2</option>
+  </select>
+
+  <script>
+    function openProject() {
+      const select = document.getElementById('projectSelect');
+      const project = select.value;
+      if (project) {
+        // Navigate to the selected HTML file in the same tab
+        window.location.href = project;
+      }
+    }
+  </script>
+</body>
+</html>
