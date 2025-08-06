@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BIO DATA</title>
+</head>
+    <body>
+    <center><h1>BIODATA</h1></center>
+    <h1><fieldset>Personal Information</fieldset></h1>
+    <form method= “post” action = “create” ><fieldset
+        <label for="first_name">First Name:</label>
+        <input type = "text" name = "first_name"maxlength="25"required/>
+        <label for="middle_name">Middle Name:</label>
+        <input type = "text" name = "middle_name"maxlength="25"required/>
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name"maxlength="25" required/><br>
+        Gender: <label for="gender">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="gender">Female</label>
+        <input type="radio" id="female" name="gender" value="female"><br>
+        <label for="tel">Date of Birth:</label>
+        <input type="date"name="date"/><br>
+        <label for="tel">Password:</label>
+        <input type="password"name="password"minlength="8"required/><br>
+        <label for="tel">Email:</label>
+        <input type="email" name="email"required/><br>
+        <label for="tel">Phone Number:</label>
+        <input type="tel"name="tel"minlength="11"required/><br>
+        <label for="Height">Height:</label>
+        <input type="number"name="tel"minlength="11"required/>cm<br>
+        <label for="Weight">Weight:</label>
+        <input type="number"name="tel"minlength="11"required/>kg<br>
+        </fieldset>
+        <h1><fieldset>Education</fieldset></h1>
+        <fieldset>
+            <label for="school_name">School Name:</label>
+            <input type = "text" name = "school_name"required placeholder=""/><br>
+            <label for="Strand">Choose a Strand:</label>
+            <select id="dropdown" name="dropdown">
+                <option value="ACADEMIC STRAND">ACADEMIC STRAND</option>
+                <option value="TVL STRAND">TVL STRAND</option>
+            </select><br>
+            <label for="section">Section:</label>
+            <input type = "text" name = "Section:"required/><br>
+
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+    </body>
+</html>
+
+
+
