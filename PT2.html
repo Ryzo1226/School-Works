@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -28,8 +28,11 @@
         <input type="date"name="date"/><br><br>
         <label for="tel">Password:</label>
         <input type="password"name="password"minlength="8"required/><br><br>
-        <label for="tel">Email:</label>
-        <input type="email" name="email"required/><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+               title="Please enter a valid email (e.g., user@gmail.com)"
+               required><br><br>
         <label for="tel">Phone Number:</label>
         <input type="tel"name="tel"placeholder="+63"required/><br><br>
         <label for="Height">Height:</label>
@@ -81,10 +84,10 @@
                 <option>HUMSS7</option>
                 <option>EIM</option>
                 <option>ARTS AND DESIGN</option>
-            </select></label><br>
-        </fieldset>
-    </form><br><br>
+            </select><br><br>
+        </fieldset><br>
     <input type="submit" value="Submit">
+    </form>
     </body>
 </html>
 
