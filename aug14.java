@@ -1,6 +1,6 @@
 import java.util.Scanner;
+public class aug14 {
 
-public class jo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String fname, lname;

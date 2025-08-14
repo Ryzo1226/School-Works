@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BIO DATA</title>
+</head>
+<body>
+<marquee><center><h1>My Bio Data form</h1></center></marquee>
+<fieldset>
+    <legend><h3>Personal Information</h3></legend>
+    <form method= “post” action = “create” >
+        <label for="first_name">First Name:</label>
+        <input type = "text" name = "first_name"maxlength="25"required/>
+        <label for="middle_name">Middle Name:</label>
+        <input type = "text" name = "middle_name"maxlength="25"required/>
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name"maxlength="25" required/><br><br>
+        Gender: <label for="gender">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="gender">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="gender">Other:</label>
+        <input type="radio" id="Other:" name="gender" value="Other:"><br><br>
+        <label for="tel">Date of Birth:</label>
+        <input type="date"name="date"/><br><br>
+        <label for="tel">Password:</label>
+        <input type="password"name="password"minlength="8"required/><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+               title="Please enter a valid email (e.g., user@gmail.com)"
+               required><br><br>
+        <label for="tel">Phone Number:</label>
+        <select id="+63" name="+63">
+            <option>+63</option>
+            <input type="tel"name="tel"placeholder=""required/><br><br>
+            <label for="Height">Height:</label>
+            <input type="text"name="Height"size="5px"placeholder="cm"/><br><br>
+            <label for="Weight">Weight:</label>
+            <input type="text"name="Weight"size="5px"placeholder="kg"/><br><br>
+</fieldset>
+<fieldset>
+    <legend><h3>Education</h3></legend>
+    <label for="school_name">School Name:</label>
+    <input type = "text" name = "school_name"required placeholder="School"/><br><br>
+    <label for="strand">Strand:</label>
+    <select id="strand" name="strand" required onchange="updateSections()">
+        <option value="">-- Select Strand --</option>
+        <option value="academic">Academic Track</option>
+        <option value="tvl">TVL Track</option>
+    </select><br><br>
+
+    <label for="section">Section:</label>
+    <select id="section" name="section" required>
+        <option value="">-- Select Section --</option>
+    </select>
+
+    <script>
+        const academicSections = [
+            "ABM 1", "ABM 2", "ABM 3",
+            "STEM 1", "STEM 2", "STEM 3", "STEM 4", "STEM 5", "STEM 6", "STEM 7",
+            "HUMSS 1", "HUMSS 2", "HUMSS 3", "HUMSS 4", "HUMSS 5", "HUMSS 6", "HUMSS 7",
+            "Arts And Design"
+        ];
+
+        const tvlSections = [
+            "ICT 1", "ICT 2", "ICT 3",
+            "AS 1", "AS 2", "AS 3",
+            "SMAW 1", "SMAW 2",
+            "COOKERY 1", "COOKERY 2", "COOKERY 3", "COOKERY 4", "COOKERY 5",
+            "EIM",
+
+        ];
+
+        function updateSections() {
+            const strand = document.getElementById("strand").value;
+            const sectionSelect = document.getElementById("section");
+
+            // Clear existing options
+            sectionSelect.innerHTML = '<option value="">-- Select Section --</option>';
+
+            let sections = [];
+            if (strand === "academic") {
+                sections = academicSections;
+            } else if (strand === "tvl") {
+                sections = tvlSections;
+            }
+
+            // Add new options
+            sections.forEach(section => {
+                const option = document.createElement("option");
+                option.value = section;
+
+                option.textContent = section;
+                sectionSelect.appendChild(option);
+            });
+        }
+    </script>
+</fieldset><br>
+<input type="submit" value="Register">
+</form>
+</body>
+</html>
+
+
+
