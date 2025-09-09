@@ -5,23 +5,12 @@
   <title>Select Your Project</title>
 </head>
 <body>
-  <h1>Select Your Project</h1>
-  
-  <label for="projectSelect">Choose a project:</label>
-  <select id="projectSelect" name="projectSelect" onchange="openProject()">
-    <option value="">--Please choose an option--</option>
-    <option value="PT1.html">PT1</option>
-    <option value="PT2.html">PT2</option>
-  </select>
-  
-  <script>
-    function openProject() {
-      const select = document.getElementById('projectSelect');
-      const project = select.value;
-      if (project) {
-        window.location.href = project;  // Navigates to the selected file in same tab
-      }
-    }
-  </script>
+  <fieldset style="border: 2px solid black"><legend><h1>Select HTML Project</h1></legend>
+    <p><a href="PT1.html">Registration Form</a></p>
+    <p><a href="PT2.html">Bio Data</a></p><br><br>
+    <p><strong>Student: Alphine Vince G. Lim</strong></p>
+    <p><strong>Teacher: Francis S. Ferrer</strong></p>
+
+  </fieldset>
 </body>
 </html>
