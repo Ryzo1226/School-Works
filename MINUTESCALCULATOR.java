@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-public class minutescalculator {
+public class MINUTESCALCULATOR {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         long minutes,totaldays,years,days;
