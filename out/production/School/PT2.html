@@ -10,117 +10,137 @@
 </head>
     <body>
 
+    <!-- Alphine Lim -->
+
         <form method= “post” action = “create” >
 
-            <marquee><center><h1>My Bio Data form</h1></center></marquee>
+            <marquee><center><h1>Biodata Form</h1></center></marquee>
+
+            <!--This is coded by alphine-->
 
     <fieldset>
         <legend><h3>Personal Information</h3></legend>
 
-
-                <label for="first_name">First Name:</label>
+                First Name:
                 <input type = "text" name = "first_name"maxlength="25"required/>
 
-                <label for="middle_name">Middle Name:</label>
+                Middle Name:
                 <input type = "text" name = "middle_name"maxlength="25"required/>
 
-                <label for="last_name">Last Name:</label>
+                Last Name:
                 <input type="text" name="last_name"maxlength="25" required/><br><br>
 
-                <label for="gender">Gender:</label>
-                <label for="gender">Male:</label>
+                Gender:
+                Male
                 <input type="radio" id="male" name="gender" value="male">
 
-                <label for="gender">Female:</label>
+                Female
                 <input type="radio" id="female" name="gender" value="female">
 
-                <label for="gender">Other:</label>
+                Other
                 <input type="radio" id="Other:" name="gender" value="Other:"><br><br>
 
-                <label for="tel">Date of Birth:</label>
+                Date of Birth:
                 <input type="date"name="date"/><br><br>
 
-                <label for="tel">Password:</label>
+                Password:
                 <input type="password"name="password"minlength="8"required/><br><br>
 
-                <label for="email">Email:</label>
+                Email:
                 <input type="email" id="email" name="email"
-                       pattern="[a-zA-Z0-9._%+-]+@gmail.com"
+                       pattern="[a-zA-Z0-9._%+-]+@gmail\.com$"
                        title="Please enter a valid email (e.g., user@gmail.com)"
                        required><br><br>
 
-                <label for="tel">Phone Number:</label>
+                Phone Number:
                 <input type="tel"name="tel"placeholder="+63"required/><br><br>
 
-                <label for="Height">Height:</label>
+                Height:
                 <input type="text"name="Height"size="5px"placeholder="cm"/><br><br>
 
-                <label for="Weight">Weight:</label>
+                Weight:
                 <input type="text"name="Weight"size="5px"placeholder="kg"/><br><br>
+
 
     </fieldset>
 
-<fieldset>
+    <fieldset>
+
     <legend><h3>Education</h3></legend>
-    <label for="school_name">School Name:</label>
-    <input  type="text" id="Text" name="SchoolName"/><br><br>
 
+<<<<<<< HEAD
+    <!--This is coded by alphine-->
+=======
+                School Name:
+                <input  type="text" id="Text" name="SchoolName"/><br><br>
 
+        <!-- Alphine Lim -->
+>>>>>>> origin/main
 
-    <label for="Strand">Choose a Strand:</label>
-    <select id="dropdown" name="dropdown">
-        <option>Academic Strand</option>
-        <option>TVL Strand</option>
-    </select><br><br>
+                Choose Strand:
+                <select id="dropdown" name="dropdown">
+                    <option>Academic Strand</option>
+                    <option>TVL Strand</option>
+                </select><br><br>
 
-    <label for="Section">Choose a Section:</label>
-    <select id="dropdown" name="dropdown">
-        <optgroup label="TVL Strand">
-        <option>ICT1</option>
-        <option>ICT2</option>
-        <option>ICT3</option>
-        <option>SMAW1</option>
-        <option>SMAW2</option>
-        <option>SMAW3</option>
-        <option>COOK1</option>
-        <option>COOK2</option>
-        <option>COOK3</option>
-        <option>COOK4</option>
-        <option>COOK5</option>
-        <option>AS1</option>
-        <option>AS2</option>
-        <option>AS3</option>
-        <option>EIM</option>
-        </optgroup>
+                Choose Section:
+                <select id="dropdown" name="dropdown">
 
-        <optgroup label="Academic Strand">
-        <option>ABM1</option>
-        <option>ABM2</option>
-        <option>ABM3</option>
-        <option>STEM1</option>
-        <option>STEM2</option>
-        <option>STEM3</option>
-        <option>STEM4</option>
-        <option>STEM5</option>
-        <option>STEM6</option>
-        <option>STEM7</option>
-        <option>HUMSS1</option>
-        <option>HUMSS2</option>
-        <option>HUMSS3</option>
-        <option>HUMSS4</option>
-        <option>HUMSS5</option>
-        <option>HUMSS6</option>
-        <option>HUMSS7</option>
-        <option>ARTS AND DESIGN</option>
-        </optgroup>
+                    <optgroup label="Academic Strand">
+                    <option>ABM1</option>
+                    <option>ABM2</option>
+                    <option>ABM3</option>
+                    <option>STEM1</option>
+                    <option>STEM2</option>
+                    <option>STEM3</option>
+                    <option>STEM4</option>
+                    <option>STEM5</option>
+                    <option>STEM6</option>
+                    <option>STEM7</option>
+                    <option>HUMSS1</option>
+                    <option>HUMSS2</option>
+                    <option>HUMSS3</option>
+                    <option>HUMSS4</option>
+                    <option>HUMSS5</option>
+                    <option>HUMSS6</option>
+                    <option>HUMSS7</option>
+                    <option>ARTS AND DESIGN</option>
+                    </optgroup>
 
-    </select><br><br>
-</fieldset><br>
+                    <optgroup label="TVL Strand">
+                    <option>ICT1</option>
+                    <option>ICT2</option>
+                    <option>ICT3</option>
+                    <option>SMAW1</option>
+                    <option>SMAW2</option>
+                    <option>SMAW3</option>
+                    <option>COOK1</option>
+                    <option>COOK2</option>
+                    <option>COOK3</option>
+                    <option>COOK4</option>
+                    <option>COOK5</option>
+                    <option>AS1</option>
+                    <option>AS2</option>
+                    <option>AS3</option>
+                    <option>EIM</option>
+                    </optgroup>
 
-<input type="submit" value="Register">
-            </form>
-        </body>
+                </select><br><br>
+
+    </fieldset><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </body>
+
 </html>
 
+<<<<<<< HEAD
 
 
+<!--This is coded by alphine-->
+=======
+<!-- Alphine Lim -->
+>>>>>>> origin/main
