@@ -1,3 +1,4 @@
 # School Works
 This my website All project Links
-https://ryzo1226.github.io/School-Works/
+Home: https://ryzo1226.github.io/School-Works/
+Repo: https://github.com/Ryzo1226/School-Works
