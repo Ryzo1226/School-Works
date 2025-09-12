@@ -1,57 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alphine Lim</title>
 </head>
 <body>
-        <form action="post" action="create">
-            <H1>Student Registration Form</H1>
-            <h4>Fill out the form registration</h4>
-            <hr>
-            Name<br>
-                <input type="text" placeholder="First" maxlength="11">
-                <input type="text" placeholder="Last" maxlength="11"><br><br>
-
-            Birth Date Gender<br>
-                <input type="date"style="width:157px;">
+<form action="post">
+    <h1>Student Registration Form</h1>
+    <h4>Fill out the form registration</h4>
+    <hr>
+    <table>
+        <tr>Name</tr>
+            <tr>
+                <td><input type="text" placeholder="First" maxlength="25"></td>
+                <td><input type="text" placeholder="Last" maxlength="25"></td>
+            </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Birth Date</td>
+            <td>Gender</td>
+        </tr>
+            <tr>
+                <td><input type="date" style="width:157px;"></td>
+                <td>
                     <select name="dropdown" style="width:164px;">
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Female">Others</option>
-                    </select><br><br>
-            Address<br>
-                <input type="text" placeholder="Address line 1"size=43><br><br>
-                <input type="text" placeholder="Address line 2"size=43><br><br>
-                <input type="text" placeholder="City">
-                <input type="text" placeholder="Region"><br><br>
-                <input type="text" placeholder="Postal/Zip Code">
-                <select name="dropdown"style="width:164px;">
-                    <option>Philippines</option>
-                    <option>China</option>
-                </select><br><br>
+                    </select>
+                </td>
+            </tr>
+    </table>
+    <table>
+        <tr>Address</tr>
+        <tr>
+            <td><input type="text" placeholder="Address line 1"style="width:325px"></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Address line 2"style="width:325px"></td>
+        </tr>
+        </table>
+        <table>
+        <tr>
+            <td><input type="text" placeholder="City"></td>
+            <td><input type="text" placeholder="Region"></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Postal/Zip Code"></td>
+            <td>
+                <select name="dropdown" style="width:164px;">
+                <option>Philippines</option>
+                <option>China</option>
+                </select>
+            </td>
+        </tr>
+        <table>
+            <tr>Email</tr>
+                <td>
+                    <input type="email" placeholder="john.doe@example.com" size="43">
+                </td>
+            </tr>
+        </table>
 
-            Email<br>
-                <input type="email" placeholder="john.doe@example.com"size=43><br><br>
-            Phone       Work Phone<br>
-                <input type="tel" placeholder="9005 123 456">
-                <input type="tel" placeholder="9005 123 456"><br><br>
-            Company<br>
-                <input type="text" placeholder="ACME LTD"size=43><br><br>
-            Courses<br>
-                <select name="dropdown" style="width:330px;">
+        <table>
+            <tr>
+                <td>Phone</td>
+                <td>Work Phone</td>
+            </tr>
+            <tr>
+                <td><input type="tel" placeholder="9005 123 456"></td>
+                <td><input type="tel" placeholder="9005 123 456"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Company</td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="ACME LTD" size="43"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Courses</td>
+            </tr>
+            <tr>
+                <td><select name="dropdown" style="width:330px;">
+                    <option value="TVL">TVL</option>
                     <option value="ABM">ABM</option>
                     <option value="STEM">STEM</option>
                     <option value="HUMMS">HUMMS</option>
-                    <option value="TVL">TVL</option>
                     <option value="ARTS AND DESIGN">ARTS AND DESIGN</option>
-                </select><br><br>
-            Comments<br>
-                <input type="text"size="43"><br><br>
-                <input type="submit"value="Clear Fields">
-                <input type="submit"value="Submit Application">
-        </form> 
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    Comments
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" size="43"></td>
+            </tr>
+        </table>
+            <br><input type="reset" value="Clear Fields">
+            <input type="submit" value="Submit Application">
+    </form>
 </body>
 </html>
