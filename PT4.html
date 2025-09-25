@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Alphine Lim</h1>
+        <h2>ICT-1</h2>
+        <p>Welcome to my portfolio website. I'm a passionate individual with a love for learning and creating amazing things.</p>
+    </div>
+    <div class="profile-picture">
+        <img src="pfp.jpg" alt="Profile Picture">
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="section-content">
+        <h2>About Me</h2>
+        <p>Hello! I'm [Your Name], a [Your Profession/Student] based in [Your Location]. I have a passion for [your interests] and love to [what you enjoy doing]. With [X] years of experience in [your field], I've worked on various projects that have helped me grow both personally and professionally.</p>
+        <p>My journey in [your field] started when [brief story about how you got started]. Since then, I've been constantly learning and expanding my skill set to stay up-to-date with the latest trends and technologies.</p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="section-content">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Web Development (HTML, CSS, JavaScript)</li>
+                    <li>Programming Languages (e.g., Python, Java, C++)</li>
+                    <li>UI/UX Design</li>
+                    <li>Database Management</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <ul>
+                    <li>VS Code</li>
+                    <li>Git & GitHub</li>
+                    <li>Adobe Creative Suite</li>
+                    <li>Microsoft Office</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hobbies Section -->
+<section id="hobbies">
+    <div class="section-content">
+        <h2>My Hobbies</h2>
+        <div class="hobbies-grid">
+            <div class="hobby">
+                <i class="fas fa-book"></i>
+                <h3>Reading</h3>
+                <p>I love reading books on various topics including technology, science fiction, and personal development.</p>
+            </div>
+            <div class="hobby">
+                <i class="fas fa-camera"></i>
+                <h3>Photography</h3>
+                <p>Capturing beautiful moments and landscapes is one of my favorite pastimes.</p>
+            </div>
+            <div class="hobby">
+                <i class="fas fa-utensils"></i>
+                <h3>Cooking</h3>
+                <p>I enjoy experimenting with new recipes and cuisines from around the world.</p>
+            </div>
+            <div class="hobby">
+                <i class="fas fa-hiking"></i>
+                <h3>Hiking</h3>
+                <p>Exploring nature and going on hikes helps me stay active and connected with the outdoors.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="section-content">
+        <h2>Get In Touch</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Simple form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! I will get back to you soon.');
+        this.reset();
+    });
+</script>
+</body>
+</html>
