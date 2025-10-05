@@ -175,40 +175,38 @@ section h2 {
 
 /* Social Section */
 
-.social-icons{
-    padding:5px;
-    background-color:;
+/* Social Section */
+#social {
     text-align: center;
+    padding: 5rem 10%;
 }
-.social-icons a{
-    color:#2c3e50;
-    line-height:300px;
-    font-size:50px;
-    margin: 50px;
-    text-decoration:none;
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
 }
-.social-icons a i{
-    line-height:160px;
-    font-size:160px;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1);
+
+.social-icons a {
+    color: #2c3e50;
+    transition: transform 0.3s, color 0.3s;
+    text-decoration: none;
 }
-.social-icons a:hover i{
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 200ms ease-in;
-    transform: scale(1.5);
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+    color: #3498db;
+}
+
+.social-icons i {
+    font-size: 3.5rem;
+}
+
+#social h6 {
+    margin-top: 3rem;
+    color: #7f8c8d;
+    font-size: 0.9rem;
 }
 
 /* Responsive Design */
