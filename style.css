@@ -76,8 +76,11 @@ nav ul li a:hover::after {
     left: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    height: 72px; /* larger logo overlays nav text */
+    height: 56px;
+    max-height: 56px;
     width: auto;
+    max-width: 30vw;
+    display: block;
     object-fit: contain;
     z-index: 2;
     pointer-events: none; /* don't block link clicks under the image */
@@ -446,7 +449,9 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-logo {
-        height: 56px;
+        height: 40px;
+        max-height: 40px;
+        max-width: 40vw;
         left: 0.75rem;
         top: 50%;
         transform: translateY(-50%);
