@@ -32,6 +32,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -67,6 +68,19 @@ nav ul li a:hover {
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+/* Nav logo on far left */
+.nav-logo {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 72px; /* larger logo overlays nav text */
+    width: auto;
+    object-fit: contain;
+    z-index: 2;
+    pointer-events: none; /* don't block link clicks under the image */
 }
 
 /* Hero Section */
@@ -431,6 +445,12 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-logo {
+        height: 56px;
+        left: 0.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     /* Keep navbar single-line and scrollable on small screens */
     nav {
         padding: 0.5rem 3%;
