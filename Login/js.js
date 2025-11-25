@@ -8,13 +8,11 @@ function login() {
 
     if (username === "admin" && password === "123") {
         alert("Login Successfully");
-        wrong.textContent = "";
+        wrong.style.display = 'none';
         let username = document.getElementById("username").value = "";
         let password = document.getElementById("password").value = "";
     } 
     if (username !== "admin" || password !== "123") {
-        wrong.textContent = "Invalid Username and/or Password";
-        let username = document.getElementById("username").value = "";
-        let password = document.getElementById("password").value = "";
+        wrong.style.display = 'block';
     }
 }
