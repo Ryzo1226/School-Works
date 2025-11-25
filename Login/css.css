@@ -36,8 +36,6 @@ body {
     position: absolute;
     text-align: center;
     top: 240px;
-    left: 50%;
-    transform: translateX(-50%);
     display: none;
 }
 .wrong p {
