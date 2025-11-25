@@ -2,10 +2,11 @@ function login() {
     const usernameInput = document.getElementById("username");
     const passwordInput = document.getElementById("password");
     const wrong = document.getElementById("wrong");
+    wrong.style.display = 'none';
 
     const username = usernameInput.value;
     const password = passwordInput.value;
-
+    
     if (username === "admin" && password === "123") {
         alert("Login Successfully");
         wrong.style.display = 'none';
