@@ -1,19 +1,18 @@
 function login() {
-    const usernameInput = document.getElementById("username");
-    const passwordInput = document.getElementById("password");
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const wrongDiv = document.querySelector(".wrong");
     const wrong = document.getElementById("wrong");
-    wrong.style.display = 'none';
-
-    const username = usernameInput.value;
-    const password = passwordInput.value;
     
     if (username === "admin" && password === "123") {
         alert("Login Successfully");
-        wrong.style.display = 'none';
-        let username = document.getElementById("username").value = "";
-        let password = document.getElementById("password").value = "";
-    } 
-    if (username !== "admin" || password !== "123") {
-        wrong.style.display = 'block';
+        wrongDiv.style.display = "none";
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+    } else {
+        wrong.textContent = "Invalid Username and/or Password";
+        wrongDiv.style.display = "block";
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
     }
 }

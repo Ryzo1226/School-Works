@@ -36,9 +36,16 @@ body {
     position: absolute;
     text-align: center;
     top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.wrong p {
     background-color: coral;
     border-radius: 10px;
-    width: 400px;
+    padding: 10px 20px;
+    min-width: 400px;
+    margin: 0;
 }
 h1 {
     color: black;
