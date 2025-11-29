@@ -2,10 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Select Your Major</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    fieldset {
+      border: 3px solid #333;
+      border-radius: 10px;
+      padding: 30px;
+      background: white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      max-width: 600px;
+      width: 100%;
+    }
+    legend {
+      padding: 0 15px;
+    }
+    legend h1 {
+      color: #667eea;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      margin: 20px 0;
+    }
+    h2 a {
+      display: inline-block;
+      color: #764ba2;
+      text-decoration: none;
+      font-size: 1.5em;
+      padding: 10px 20px;
+      border: 2px solid #764ba2;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+    h2 a:hover {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    h3 {
+      margin: 10px 0;
+      color: #333;
+      font-size: 1.1em;
+    }
+    h3 a {
+      color: #667eea;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    h3 a:hover {
+      text-decoration: underline;
+      color: #764ba2;
+    }
+    br {
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
-  <fieldset style="border: 2px solid black"><legend><h1>Select Major</h1></legend>
+  <fieldset><legend><h1>Select Major</h1></legend>
     <H2><a href="JAVA.html">Java</a></H2>
     <H2><a href="HTML.html">DotNet</a></H2><br><br>
     <H3><strong>Student: Alphine Vince G. Lim</strong></H3>

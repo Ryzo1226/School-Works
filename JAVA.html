@@ -2,10 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Select Your Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    fieldset {
+      border: 3px solid #333;
+      border-radius: 10px;
+      padding: 30px;
+      background: white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      max-width: 700px;
+      width: 100%;
+    }
+    legend {
+      padding: 0 15px;
+    }
+    legend h1 {
+      color: #667eea;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    p {
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+    p:first-of-type,
+    p:nth-of-type(6) {
+      font-weight: bold;
+      color: #764ba2;
+      font-size: 1.3em;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #667eea;
+    }
+    a {
+      color: #667eea;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    a:hover {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      transform: translateX(5px);
+      padding-left: 15px;
+    }
+    strong {
+      color: #333;
+      font-weight: 600;
+    }
+    br {
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
-  <fieldset style="border: 2px solid black"><legend><h1>Select JAVA Project</h1></legend>
+  <fieldset><legend><h1>Select JAVA Project</h1></legend>
     <p>First Quarter</p>
     <p><a href="BMI.java">BMI</a></p>
     <p><a href="MINUTESCALCULATOR.java">Minutes Calculator</a></p>
